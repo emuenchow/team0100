@@ -1,14 +1,16 @@
-<h1 routerLink="/step2">Appointments</h1>
+<h1 routerLink="/step1">Appointments</h1>
 
 <p>
-  Please choose a range of dates fo the appointment.
+  Please choose a range of dates for the appointment.
 </p>
+<label>
+  <input type="radio" name="dates" (click)="appointment(1)"> Today<br>
+</label>
+<label>
+  <input type="radio" name="dates" (click)="appointment(2)" [checked]="within"> Within <input type="number" [(ngModel)]="week" (click)="weeks()"> week(s)<br>
+</label>
+<label>
+  <input type="radio" name="dates" (click)="appointment(3)"> Any avaliable dates<br>
+</label>
 
-<form action="">
-  <input type="radio" name="dates" value="soon"> Today<br>
-  <input type="radio" name="dates" value="soon"> Within <input type="number" value=""> week(s)<br>
-  <input type="radio" name="dates"> Any avaliable dates<br>
-
-
-<button routerLink="/outside">Submit</button>
-</form>
+<button routerLink="/outside" [disabled]="disabled" (click)= "setWeek()">Submit</button>

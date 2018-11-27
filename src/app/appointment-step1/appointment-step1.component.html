@@ -3,15 +3,13 @@
 <p>
   What is the purpose of your medical appointment?
 </p>
-
-<form action="">
-  <input type="radio" name="purpose"> STI testing<br>
-  <input type="radio" name="purpose"> UTI testing<br>
-  <input type="radio" name="purpose"> Prescription refill<br>
-  <input type="radio" name="purpose"> Immunization shots<br>
-  <input type="radio" name="purpose"> Primary Care<br>
-  <input type="radio" name="purpose"> Health clearance<br>
-  <input type="radio" name="purpose"> Other reason<br>
-
-<button routerLink="/step2">Submit</button>
-</form>
+<div *ngIf="medical; else elseBlock">
+  <label *ngFor="let purpose of purposes">
+    <input type="radio" name="purpose" (click)="appointment(purpose)">{{purpose}}<br>
+  </label>
+  <button routerLink="/step2" [disabled]="disabled">Submit</button>
+</div>
+<ng-template #elseBlock>
+  <input type="text" name="" (click)="onSelect()" [(ngModel)]="typed"><br>
+  <button routerLink="/step2" [disabled]="disabled" (click)="appointment_()">Submit</button>
+</ng-template>
