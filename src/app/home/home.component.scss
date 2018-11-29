@@ -1,0 +1,41 @@
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.navbar {
+	float: left;
+	position: fixed;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+}	
+
+.types-of-appointments {
+	margin: auto;
+	width: 89.8%;
+}
+
+.plans {
+	margin: auto;
+	width: 89.9%;
+}
+
+h2 {
+	font-family: Avenir-Medium, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+button {
+	background-color: rgb(236, 239, 242);
+	height: 55px;
+	font-color: rgb(0, 0, 0);
+	font-family: Avenir-Light, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
