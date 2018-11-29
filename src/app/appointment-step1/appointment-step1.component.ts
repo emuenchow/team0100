@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnswerService }     from '../answer.service';
 import { Subscription }   from 'rxjs';
+import { UserService} from '../user.service';
 
 
 @Component({
@@ -13,18 +14,21 @@ export class AppointmentStep1Component implements OnInit {
   disabled = true;
   typed: string;
   medical = false;
+  kind: string;
   subscription: Subscription;
-  constructor(private answerService: AnswerService) {
+  constructor(){
+    //answerService: AnswerService) {
   }
   ngOnInit() {
-    this.answerService.kind$.subscribe(x => {
-      this.medical = (x === "Medical");
-    });
+
+    //this.answerService.kind$.subscribe(x => {
+      //this.medical = (x === "Medical");
+    //});
   }
 
   appointment(x: string): void{
     this.answerService.updatePurpose(x);
-    onSelect();
+    this.onSelect();
   }
 
   appointment_(): void{
