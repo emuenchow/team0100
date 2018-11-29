@@ -5,17 +5,19 @@ import {AppointmentStep1Component} from './appointment-step1/appointment-step1.c
 import {HomeComponent} from './home/home.component';
 import {AppointmentStep2Component} from './appointment-step2/appointment-step2.component';
 import {OutsideComponent} from './outside/outside.component';
+import {LoginComponent} from'./login/login.component';
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 const deactivateGuard = new InjectionToken('deactivateGuard');
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'step1', component: AppointmentStep1Component },
   { path: 'step2', component: AppointmentStep2Component },
   { path: 'outside', component: OutsideComponent },
+  { path: 'login', component: LoginComponent },
   {path: 'externalRedirect',
   canActivate: [externalUrlProvider],
   component: HomeComponent}

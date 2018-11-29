@@ -1,30 +1,40 @@
-h1 {
-  width: 100%;
-  height: 29px;
-  font-size: 22px;
-  background: #2774ae;
-  color: white;
-  margin: 0px;
-  padding: 15px;
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
-p {
-    font-size: 20px;
-    padding: 20px;
+.navbar {
+	float: left;
+	position: fixed;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
 }
 
-.container {
-  width: 100%;
-height: 229px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
+.types-of-appointments {
+	margin: auto;
+	width: 89.8%;
+}
+
+.plans {
+	margin: auto;
+	width: 89.9%;
+}
+
+h2 {
+	font-family: Avenir-Medium, Helvetica, sans-serif;
+	font-size: 20px;
 }
 
 button {
-    width: 90%;
-        height: 50px;
-    background-color: #eceff2;
-    border: none;
+	background-color: rgb(236, 239, 242);
+	height: 55px;
+	font-color: rgb(0, 0, 0);
+	font-family: Avenir-Light, Helvetica, sans-serif;
+	font-size: 20px;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

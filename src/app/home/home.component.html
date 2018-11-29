@@ -4,6 +4,12 @@
   What kind of appointment do you like to make?
 </p>
 <div class="container">
-  <button *ngFor="let kind of kinds" routerLink="/step1" (click)="appointment(kind)">{{kind}}</button>
+  <button mat-flat-button *ngFor="let kind of kinds" routerLink="/step1" (click)="appointment(kind)">{{kind}}</button>
 
+  <div class="plans">
+  	<h2>Learn more</h2>
+  	<button mat-flat-button>UCLA Health Care Plans</button>
+  </div>
+  <div class="navbar">
+  <app-navbar></app-navbar>
 </div>
