@@ -1,8 +1,22 @@
-<p>
-  What kind of appointment do you like to make?
-</p>
-
-<button type="button" name="button" routerLink="/step1">Medical</button>
-<button type="button" name="button">Vision</button>
-<button type="button" name="button">Dental</button>
-<button type="button" name="button">Behavioral Health</button>
+<div class="home-title">
+	<img src="./assets/images/title@3x.png" alt="Appointments">
+</div>
+<div class="types-of-appointments">
+	<h2>
+  		What kind of appointment would you like to make?
+	</h2>
+	<button mat-flat-button routerLink="/step1">Medical</button>
+	<br />
+	<button mat-flat-button>Vision</button>
+	<br />
+	<button mat-flat-button>Dental</button>
+	<br />
+	<button mat-flat-button>Behavioral Health</button>
+</div>
+<div class="plans">
+	<h2>Learn more</h2>
+	<button mat-flat-button>UCLA Health Care Plans</button>
+</div>
+<div class="navbar">
+<app-navbar></app-navbar>
+</div>
