@@ -1,12 +1,14 @@
-<h1 routerLink='/home'>Appointments</h1>
+<h1 routerLink='/home'>Book an appointment</h1>
 
 <p>
   What is the purpose of your medical appointment?
 </p>
 <div *ngIf="medical; else elseBlock">
-  <label *ngFor="let purpose of purposes">
-    <input type="radio" name="purpose" (click)="appointment(purpose)">{{purpose}}<br>
-  </label>
+  <mat-radio-group>
+
+    <mat-radio-button *ngFor="let purpose of purposes" value="purpose" [checked] = "false" (click)="appointment(purpose)">{{purpose}}<br></mat-radio-button >
+
+  </mat-radio-group>
   <button routerLink="/step2" [disabled]="disabled">Submit</button>
 </div>
 <ng-template #elseBlock>

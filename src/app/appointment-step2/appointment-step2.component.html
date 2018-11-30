@@ -4,7 +4,7 @@
   Please choose a range of dates for the appointment.
 </p>
 <label>
-  <input type="radio" name="dates" (click)="appointment(1)"> Today<br>
+  <mat-radio-button name="dates" (click)="appointment(1)"> Today</mat-radio-button>
 </label>
 <label>
   <input type="radio" name="dates" (click)="appointment(2)" [checked]="within"> Within <input type="number" [(ngModel)]="week" (click)="weeks()"> week(s)<br>

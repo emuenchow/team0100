@@ -7,3 +7,25 @@ h1 {
   margin: 0px;
   padding: 15px;
 }
+ p{
+   font-family: Avenir-Light, Helvetica, sans-serif;
+ 	font-size: 20px;
+ 	width: 100%;
+ }
+
+ .mat-radio-button {
+   font-family: Avenir-Medium, Helvetica, sans-serif;
+  font-size: 20px;
+     margin-left: 23px;
+     width: 330px;
+     border-bottom: gray;
+     height: 55px;
+ }
+
+ .mat-radio-label-content {
+     display: inline-block;
+     order: 0;
+     line-height: inherit;
+     padding-left: 16px;
+     padding-right: 0;
+ }

@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { MatButtonToggleModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
+import { MatRadioModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -38,7 +39,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 	MatButtonModule,
 	MatButtonToggleModule,
 	MatIconModule,
+  MatRadioModule,
 	BrowserAnimationsModule
+
 	],
   providers: [],
   bootstrap: [AppComponent]

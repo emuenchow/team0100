@@ -13,7 +13,7 @@ export class AppointmentStep1Component implements OnInit {
   purposes: string[]=["STI testing", "UTI testing", "Prescription refill", "Immunization shots", "Primary Care", "Health clearance", "Other reason"];
   disabled = true;
   typed: string;
-  medical = false;
+  medical = true;
   kind: string;
   subscription: Subscription;
   constructor(){
