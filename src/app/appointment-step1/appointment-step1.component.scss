@@ -28,4 +28,15 @@ h1 {
      line-height: inherit;
      padding-left: 16px;
      padding-right: 0;
+
  }
+
+ .mat-radio-container {
+     box-sizing: border-box;
+     display: inline-block;
+     position: relative;
+     width: 20px;
+     height: 20px;
+     flex-shrink: 0;
+     margin-left: 16px;
+}

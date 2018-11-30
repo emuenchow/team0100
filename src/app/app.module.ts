@@ -18,6 +18,7 @@ import { OutsideComponent } from './outside/outside.component';
 import { ExternalUrlDirective } from './external-url.directive';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {OffsiteComponent} from './offsite/offsite.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     OutsideComponent,
     ExternalUrlDirective,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    OffsiteComponent
   ],
   imports: [
     BrowserModule,
