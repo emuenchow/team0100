@@ -7,6 +7,9 @@ import { MatButtonModule } from '@angular/material';
 import { MatButtonToggleModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatRadioModule } from '@angular/material';
+import { MatDatepickerModule } from '@angular/material';
+import { MatNativeDateModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +20,7 @@ import { OutsideComponent } from './outside/outside.component';
 import { ExternalUrlDirective } from './external-url.directive';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { OffsiteComponent } from './offsite/offsite.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     OutsideComponent,
     ExternalUrlDirective,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    OffsiteComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 	MatButtonModule,
 	MatButtonToggleModule,
 	MatIconModule,
-	BrowserAnimationsModule
+	BrowserAnimationsModule,
+	MatRadioModule,
+	MatDatepickerModule,
+	MatNativeDateModule
 	],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,15 +1,20 @@
-<p>
-  What is the purpose of your medical appointment?
-</p>
-
-<form action="">
-  <input type="radio" name="purpose"> STI testing<br>
-  <input type="radio" name="purpose"> UTI testing<br>
-  <input type="radio" name="purpose"> Prescription refill<br>
-  <input type="radio" name="purpose"> Immunization shots<br>
-  <input type="radio" name="purpose"> Primary Care<br>
-  <input type="radio" name="purpose"> Health clearance<br>
-  <input type="radio" name="purpose"> Other reason<br>
-
-<button routerLink="/step2">Submit</button>
-</form>
+<div class="banner">
+		<h2><a routerLink="/home"><mat-icon class="icon">arrow_back</mat-icon></a>Book an appointment</h2>
+</div>
+<div class="step">
+	<p>Step 1 of 3</p>
+	<h2>Please choose a reason for the appointment</h2>
+</div>
+<div class="appointment-options">
+	<mat-radio-group>
+		<mat-radio-button class="button" value="sti">STI testing</mat-radio-button><br />
+		<mat-radio-button class="button" value="uti">UTI testing</mat-radio-button><br />
+		<mat-radio-button class="button" value="refill">Prescription refill</mat-radio-button><br />
+		<mat-radio-button class="button" value="shots">Immunization shots</mat-radio-button><br />
+		<mat-radio-button class="button" value="primary">Primary care</mat-radio-button><br />
+		<mat-radio-button class="button" value="clearance">Health Clearance</mat-radio-button><br />
+		<mat-radio-button class="button" value="other">Other reason</mat-radio-button>
+	</mat-radio-group>
+	<br />
+	<a routerLink="/step2"><button mat-raised-button class="raised-button">Next</button></a>
+</div>

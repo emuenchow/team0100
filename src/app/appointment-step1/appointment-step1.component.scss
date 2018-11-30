@@ -1,0 +1,72 @@
+div.banner {
+display: inline-flex;
+	vertical-align: middle;
+	background-color: rgb(39, 116, 174);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: white;
+}
+
+div.banner > h2 {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-bottom: 5pt;
+}
+
+.icon {
+	vertical-align: middle;
+	margin-right: 10pt;
+	margin-left: 10pt;
+	color: white;
+}
+
+.step {
+	width: 100%;
+	background-color: rgb(236, 239, 242);
+	margin: 0;
+	padding: 0;
+}
+
+div.step > p {
+	font-family: Avenir-Medium, Helvetica, sans-serif;
+	font-size: 14px;
+	font-color: black;
+	margin: auto;
+	width: 89.9%;
+	padding-top: 26px;
+	padding-bottom: 10px;
+}
+
+div.step > h2 {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 16px;
+	font-color: black;
+	margin: auto;
+	width: 89.9%;
+	padding-bottom: 26px;
+}
+
+div.appointment-options {
+	margin: auto;
+	width: 88%;
+}
+
+.button {
+	margin-top: 10pt;
+	margin-left: 10pt;
+	margin-bottom: 10pt;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.raised-button {
+	margin-top: 10pt;
+	margin-left: 10pt;
+	font-size: 15px;
+	font-weight: lighter;
+	text-align: center;
+	background-color: rgb(115, 192, 255);
+}
