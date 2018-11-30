@@ -5,7 +5,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers: [AnswerService]
+  providers: []
 })
 export class HomeComponent implements OnInit {
   kinds: string[]=["Medical", "Vision", "Dental","Behavioral Health"];

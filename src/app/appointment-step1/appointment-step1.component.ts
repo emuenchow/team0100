@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AnswerService }     from '../answer.service';
+//import { AnswerService }     from '../answer.service';
 import { Subscription }   from 'rxjs';
-import { UserService} from '../user.service';
+//import { UserService} from '../user.service';
 
 
 @Component({
@@ -27,12 +27,12 @@ export class AppointmentStep1Component implements OnInit {
   }
 
   appointment(x: string): void{
-    this.answerService.updatePurpose(x);
+    //this.answerService.updatePurpose(x);
     this.onSelect();
   }
 
   appointment_(): void{
-    this.answerService.updatePurpose(this.typed);
+    //this.answerService.updatePurpose(this.typed);
   }
 
   onSelect(): void{
