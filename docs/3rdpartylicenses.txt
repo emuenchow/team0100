@@ -337,7 +337,13 @@ MIT
 
 @angular/material/icon
 
+@angular/material/radio
+
 @angular/material/form-field
+
+@angular/material/dialog
+
+@angular/material/datepicker
 
 zone.js
 MIT
