@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//import { AnswerService }     from '../answer.service';
+
 
 @Component({
   selector: 'app-appointment-step2',
@@ -6,10 +8,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment-step2.component.scss']
 })
 export class AppointmentStep2Component implements OnInit {
+  week: number;
+  disabled = true;
+  within = false;
+  constructor() {}
+  ngOnInit() {}
 
-  constructor() { }
+  appointment(x: number): void{
+  
+    if(x!=2){
+      this.within=false;
+      this.onSelect();
+    }
+  }
+  setWeek(){
+    if(this.within){
 
-  ngOnInit() {
+    }
+  }
+
+  onSelect(): void{
+    this.disabled = false;
+  }
+
+  weeks(): void{
+    this.within = true;
+    this.onSelect();
   }
 
 }
