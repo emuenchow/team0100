@@ -15,6 +15,7 @@ const deactivateGuard = new InjectionToken('deactivateGuard');
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'team0100', component: HomeComponent },
   { path: 'step1', component: AppointmentStep1Component },
   { path: 'step2', component: AppointmentStep2Component },
   { path: 'outside', component: OutsideComponent },
