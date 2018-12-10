@@ -1,0 +1,42 @@
+<div class="banner">
+		<h2><a routerLink="/outside"><mat-icon class="icon">arrow_back</mat-icon></a>Off-site Providers</h2>
+</div>
+<div class="container">
+<h2>I'm looking for a: </h2>
+<mat-form-field>
+  <mat-select value="1">
+    <mat-option value="1">Doctor/Medical Professional</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h2>Whose name is: (optional)</h2>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter name">
+  </mat-form-field>
+
+<h2>Who Specializes in: </h2>
+<mat-form-field>
+  <mat-select [(ngModel)]="message">
+    <mat-option *ngFor ="let purpose of purposes; let i = index" [value]="i">{{purpose}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h2>Located near: </h2>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter an address or zipcode" value="90095">
+  </mat-form-field>
+
+
+<h2>Within a distance of: </h2>
+<mat-form-field>
+<mat-select placeholder="Choose distance">
+  <mat-option value = 1>1 mile</mat-option>
+  <mat-option value = 2>2 miles</mat-option>
+  <mat-option value = 5>5 miles</mat-option>
+  <mat-option value = 10>10 miles</mat-option>
+  <mat-option value = 100>10+ miles</mat-option>
+</mat-select>
+</mat-form-field>
+</div>
+
+<a routerLink="/results"><button mat-raised-button class="button">Submit</button></a>

@@ -24,6 +24,10 @@ import { ExternalUrlDirective } from './external-url.directive';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
+
+import {DataService} from './data.service'
+import { ProvidersComponent } from './providers/providers.component';
+import { AsheComponent } from './ashe/ashe.component';
 import { OffsiteComponent } from './offsite/offsite.component';
 import { ResultsComponent } from './results/results.component';
 import { AvailableComponent } from './available/available.component';
@@ -40,10 +44,12 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     ExternalUrlDirective,
     LoginComponent,
     NavbarComponent,
+    ProvidersComponent,
+    AsheComponent,
     OffsiteComponent,
-    ResultsComponent,
     AvailableComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +68,7 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 	MatExpansionModule,
 	MatChipsModule
 	],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

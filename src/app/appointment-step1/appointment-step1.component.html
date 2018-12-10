@@ -8,14 +8,14 @@
 </div>
 <div class="appointment-options">
 	<mat-radio-group>
-		<mat-radio-button class="button" value="sti">STI testing</mat-radio-button><br />
-		<mat-radio-button class="button" value="uti">UTI testing</mat-radio-button><br />
-		<mat-radio-button class="button" value="refill">Prescription refill</mat-radio-button><br />
-		<mat-radio-button class="button" value="shots">Immunization shots</mat-radio-button><br />
-		<mat-radio-button class="button" value="primary">Primary care</mat-radio-button><br />
-		<mat-radio-button class="button" value="clearance">Health Clearance</mat-radio-button><br />
-		<mat-radio-button class="button" value="other">Other reason</mat-radio-button>
+		<mat-radio-button class="button" value="sti" (click)="appointment(0)">STI testing</mat-radio-button><br />
+		<mat-radio-button class="button" value="uti" (click)="appointment(1)">UTI testing</mat-radio-button><br />
+		<mat-radio-button class="button" value="refill" (click)="appointment(2)">Prescription refill</mat-radio-button><br />
+		<mat-radio-button class="button" value="shots" (click)="appointment(3)">Immunization shots</mat-radio-button><br />
+		<mat-radio-button class="button" value="primary" (click)="appointment(4)">Primary care</mat-radio-button><br />
+		<mat-radio-button class="button" value="clearance" (click)="appointment(5)">Health Clearance</mat-radio-button><br />
+		<mat-radio-button class="button" value="other" (click)="appointment(6)">Other reason</mat-radio-button>
 	</mat-radio-group>
 	<br />
-	<a routerLink="/step2"><button mat-raised-button class="raised-button">Next</button></a>
+	<a routerLink="/step2"><button mat-raised-button class="raised-button" [disabled]="disabled">Next</button></a>
 </div>

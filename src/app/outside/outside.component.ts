@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../data.service";
 
 @Component({
   selector: 'app-outside',
@@ -8,18 +9,20 @@ import { Component, OnInit } from '@angular/core';
 export class OutsideComponent implements OnInit {
   router: string;
   disabled = true;
-
-  constructor() { }
+  message;
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.dateO.subscribe(message => this.message = message)
   }
   yes(){
     //next page
-    this.router = "/step1";
+    this.router = "/providers";
     this.disabled = false;
   }
   no(){
     this.router = "/home";
     this.disabled = false;
   }
+
 }
