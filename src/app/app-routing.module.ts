@@ -7,6 +7,7 @@ import {AppointmentStep2Component} from './appointment-step2/appointment-step2.c
 import {OutsideComponent} from './outside/outside.component';
 import {LoginComponent} from'./login/login.component';
 import {OffsiteComponent} from './offsite/offsite.component';
+import {ResultsComponent} from './results/results.component';
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 const deactivateGuard = new InjectionToken('deactivateGuard');
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'outside', component: OutsideComponent },
   { path: 'login', component: LoginComponent },
   { path: 'offsite', component: OffsiteComponent },
+  { path: 'results', component: ResultsComponent },
   {path: 'externalRedirect',
   canActivate: [externalUrlProvider],
   component: HomeComponent}
