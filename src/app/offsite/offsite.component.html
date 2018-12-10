@@ -5,19 +5,27 @@
 <div class="appointment-options">
 	<h2>I'm looking for a:</h2>
 		<mat-select placeholder="Select a profession">
-			<mat-option value="doctor">Doctor/Medical Professional</mat-option>
+			<mat-option value="doctor">Doctor</mat-option>
 		</mat-select>
 	<h2>Whose name is (optional):</h2>
 		<input matInput placeholder="Enter a name">
 	<h2>Who specializes in</h2>
 		<mat-select placeholder="Select a practice">
 			<mat-option value="general">General Practice</mat-option>
+			<mat-option value="dermatology">Dermatology</mat-option>
+			<mat-option value="immunology">Immunology</mat-option>
+			<mat-option value="pediatrics">Pediatrics</mat-option>
+			<mat-option value="cardiology">Cardiology</mat-option>
 		</mat-select>
 	<h2>Located near:</h2>
 		<input matInput placeholder="Enter an address or zipcode">
 	<h2>Within a distance of</h2>
 		<mat-select placeholder="Select a radius">
+			<mat-option value="1">1 mile</mat-option>
 			<mat-option value="2">2 miles</mat-option>
+			<mat-option value="5">5 miles</mat-option>
+			<mat-option value="10">10 miles</mat-option>
+			<mat-option value="25">25 miles</mat-option>
 		</mat-select>
 </div>
 <a routerLink="/results"><button mat-raised-button class="raised-button">Search</button></a>
