@@ -9,7 +9,10 @@ import { MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material';
-import { MatNativeDateModule, MatSelectModule } from '@angular/material';
+import { MatNativeDateModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material';
+import { MatChipsModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +29,9 @@ import {DataService} from './data.service'
 import { ProvidersComponent } from './providers/providers.component';
 import { AsheComponent } from './ashe/ashe.component';
 import { OffsiteComponent } from './offsite/offsite.component';
+import { ResultsComponent } from './results/results.component';
+import { AvailableComponent } from './available/available.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 @NgModule({
@@ -40,7 +46,10 @@ import { OffsiteComponent } from './offsite/offsite.component';
     NavbarComponent,
     ProvidersComponent,
     AsheComponent,
-    OffsiteComponent
+    OffsiteComponent,
+    AvailableComponent,
+    ConfirmationComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -51,13 +60,13 @@ import { OffsiteComponent } from './offsite/offsite.component';
 	MatButtonModule,
 	MatButtonToggleModule,
 	MatIconModule,
-
 	BrowserAnimationsModule,
 	MatRadioModule,
 	MatDatepickerModule,
 	MatNativeDateModule,
-  MatSelectModule
-
+	MatSelectModule,
+	MatExpansionModule,
+	MatChipsModule
 	],
   providers: [DataService],
   bootstrap: [AppComponent]

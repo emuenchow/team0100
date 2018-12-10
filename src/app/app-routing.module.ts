@@ -6,6 +6,10 @@ import {HomeComponent} from './home/home.component';
 import {AppointmentStep2Component} from './appointment-step2/appointment-step2.component';
 import {OutsideComponent} from './outside/outside.component';
 import {LoginComponent} from'./login/login.component';
+import {OffsiteComponent} from './offsite/offsite.component';
+import {ResultsComponent} from './results/results.component';
+import {AvailableComponent} from './available/available.component';
+import {ConfirmationComponent} from './confirmation/confirmation.component';
 import {ProvidersComponent} from './providers/providers.component';
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
@@ -20,6 +24,10 @@ const routes: Routes = [
   { path: 'step2', component: AppointmentStep2Component },
   { path: 'outside', component: OutsideComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'offsite', component: OffsiteComponent },
+  { path: 'results', component: ResultsComponent },
+  { path: 'available', component: AvailableComponent },
+  { path: 'confirmation', component: ConfirmationComponent },
   { path: 'providers', component: ProvidersComponent },
   {path: 'externalRedirect',
   canActivate: [externalUrlProvider],

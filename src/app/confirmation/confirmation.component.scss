@@ -1,0 +1,81 @@
+
+div.banner {
+display: inline-flex;
+	vertical-align: middle;
+	background-color: rgb(39, 116, 174);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: white;
+}
+
+div.banner > h2 {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	vertical-align: middle;
+	margin-bottom: 5pt;
+}	
+
+.icon {
+	vertical-align: middle;
+	margin-right: 10pt;
+	margin-left: 10pt;
+	color: white;
+}
+
+.step {
+	width: 100%;
+	background-color: rgb(236, 239, 242);
+	margin: 0;
+	padding: 0;
+}
+
+div.step > p {
+	font-family: Avenir-Medium, Helvetica, sans-serif;
+	font-size: 14px;
+	font-color: black;
+	margin: auto;
+	width: 89.9%;
+	padding-top: 26px;
+	padding-bottom: 10px;
+}
+
+div.step > h2 {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 20px;
+	font-color: black;
+	margin: auto;
+	width: 89.9%;
+	padding-bottom: 26px;
+}
+
+div.appointment-options {
+	margin: auto;
+	width: 80%;
+}
+
+h4 {
+	font-weight: normal;
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+div.appointment-options > p {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.date {
+	margin-top: 20pt;
+	margin-left: 10pt;
+}
+
+.button {
+	margin-top: 10pt;
+	margin-left: 10pt;
+	margin-bottom: 10pt;
+	font-weight: lighter;
+	font-size: 15px;
+	background-color: rgb(115, 192, 255);
+}

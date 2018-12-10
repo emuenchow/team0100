@@ -370,6 +370,14 @@ MIT
 
 @angular/material/datepicker
 
+@angular/material/select
+
+@angular/material/core
+
+@angular/material/expansion
+
+@angular/material/chips
+
 zone.js
 MIT
 The MIT License

@@ -24,8 +24,20 @@ div.banner > h2 {
 	color: white;
 }
 
-h2.lower {
-	padding-bottom: 20pt;
+.step {
+	width: 100%;
+	background-color: rgb(236, 239, 242);
+	margin: 0;
+	padding: 0;
+}
+
+div.step > p {
+	font-family: Avenir-Heavy, Helvetica, sans-serif;
+	font-size: 12px;
+	font-color: black;
+	margin: auto;
+	width: 89.9%;
+	padding-top: 10pt;
 }
 
 div.appointment-options {
