@@ -4,14 +4,14 @@
 </div>
 <div class="step">
 	<p>Step 2 of 3</p>
-	<h2>Please choose a date for the appointment</h2>
+	<h2>Please choose when you want your appointment by</h2>
 </div>
 <div class="appointment-options">
 	<mat-form-field class="date">
-		<input matInput [matDatepicker]="picker" placeholder="Choose a date">
+		<input matInput [matDatepicker]="picker" placeholder="Choose a date" (dateChange)="saveDate($event)">
 		<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
 		<mat-datepicker touchUi #picker></mat-datepicker>
 	</mat-form-field>
-	<br />	
-	<a routerLink="/outside"><button mat-raised-button class="button">Submit</button></a>
+	<br />
+	<a routerLink="/outside"><button mat-raised-button class="button"[disabled]="disabled">Next</button></a>
 </div>

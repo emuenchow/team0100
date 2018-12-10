@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-//import { AnswerService }     from '../answer.service';
+
 import { Subscription }   from 'rxjs';
-//import { UserService} from '../user.service';
+import { DataService } from "../data.service";
 
 
 @Component({
@@ -16,24 +16,19 @@ export class AppointmentStep1Component implements OnInit {
   medical = true;
   kind: string;
   subscription: Subscription;
-  constructor(){
-    //answerService: AnswerService) {
-  }
+  message: number;
+
+  constructor(private data: DataService) { }
+
   ngOnInit() {
-
-    //this.answerService.kind$.subscribe(x => {
-      //this.medical = (x === "Medical");
-    //});
+    this.data.currentMessage.subscribe(message => this.message = message)
   }
 
-  appointment(x: string): void{
-    //this.answerService.updatePurpose(x);
+  appointment(x: number): void{
+    this.data.changeMessage(x);
     this.onSelect();
   }
 
-  appointment_(): void{
-    //this.answerService.updatePurpose(this.typed);
-  }
 
   onSelect(): void{
     this.disabled = false;

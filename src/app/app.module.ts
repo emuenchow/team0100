@@ -9,7 +9,7 @@ import { MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material';
-import { MatNativeDateModule } from '@angular/material';
+import { MatNativeDateModule, MatSelectModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +21,10 @@ import { ExternalUrlDirective } from './external-url.directive';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { OffsiteComponent } from './offsite/offsite.component';
+
+import {DataService} from './data.service'
+import { ProvidersComponent } from './providers/providers.component';
+import { AsheComponent } from './ashe/ashe.component';
 
 
 @NgModule({
@@ -34,7 +37,8 @@ import { OffsiteComponent } from './offsite/offsite.component';
     ExternalUrlDirective,
     LoginComponent,
     NavbarComponent,
-    OffsiteComponent
+    ProvidersComponent,
+    AsheComponent
   ],
   imports: [
     BrowserModule,
@@ -49,10 +53,11 @@ import { OffsiteComponent } from './offsite/offsite.component';
 	BrowserAnimationsModule,
 	MatRadioModule,
 	MatDatepickerModule,
-	MatNativeDateModule
+	MatNativeDateModule,
+  MatSelectModule
 
 	],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import { AnswerService }     from '../answer.service';
+import { DataService } from "../data.service";
+import {MatDatepickerInputEvent} from '@angular/material/datepicker';
 
 
 @Component({
@@ -8,32 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment-step2.component.scss']
 })
 export class AppointmentStep2Component implements OnInit {
-  week: number;
-  disabled = true;
-  within = false;
-  constructor() {}
-  ngOnInit() {}
+  message;
+  disabled=true;
+  constructor(private data: DataService) {}
+  ngOnInit() {this.data.dateO.subscribe(message => this.message = message)}
 
-  appointment(x: number): void{
-  
-    if(x!=2){
-      this.within=false;
-      this.onSelect();
-    }
-  }
-  setWeek(){
-    if(this.within){
-
-    }
-  }
-
-  onSelect(): void{
-    this.disabled = false;
-  }
-
-  weeks(): void{
-    this.within = true;
-    this.onSelect();
+  saveDate(event: MatDatepickerInputEvent<Date>){
+    this.data.changeDate(event.value);
+    console.log(event.value);
+    this.disabled=false;
   }
 
 }
