@@ -25,6 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {DataService} from './data.service'
 import { ProvidersComponent } from './providers/providers.component';
 import { AsheComponent } from './ashe/ashe.component';
+import { OffsiteComponent } from './offsite/offsite.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AsheComponent } from './ashe/ashe.component';
     LoginComponent,
     NavbarComponent,
     ProvidersComponent,
-    AsheComponent
+    AsheComponent,
+    OffsiteComponent
   ],
   imports: [
     BrowserModule,
