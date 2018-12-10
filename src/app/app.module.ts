@@ -26,6 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { OffsiteComponent } from './offsite/offsite.component';
 import { ResultsComponent } from './results/results.component';
+import { AvailableComponent } from './available/available.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { ResultsComponent } from './results/results.component';
     LoginComponent,
     NavbarComponent,
     OffsiteComponent,
-    ResultsComponent
+    ResultsComponent,
+    AvailableComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,

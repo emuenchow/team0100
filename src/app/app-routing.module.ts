@@ -8,6 +8,8 @@ import {OutsideComponent} from './outside/outside.component';
 import {LoginComponent} from'./login/login.component';
 import {OffsiteComponent} from './offsite/offsite.component';
 import {ResultsComponent} from './results/results.component';
+import {AvailableComponent} from './available/available.component';
+import {ConfirmationComponent} from './confirmation/confirmation.component';
 
 const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 const deactivateGuard = new InjectionToken('deactivateGuard');
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'offsite', component: OffsiteComponent },
   { path: 'results', component: ResultsComponent },
+  { path: 'available', component: AvailableComponent },
+  { path: 'confirmation', component: ConfirmationComponent },
   {path: 'externalRedirect',
   canActivate: [externalUrlProvider],
   component: HomeComponent}
